@@ -1,5 +1,5 @@
 // Guarda a agenda no aparelho para abrir mesmo sem internet.
-const CACHE = "agenda-dez-v9";
+const CACHE = "agenda-dez-v10";
 const FILES = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
